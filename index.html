@@ -5,122 +5,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FIME</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
+    <header>
+        <nav class="navbar" id="navbar">
+            <a href="index.html">
+                <img src="imgs/logo.svg" alt="Logo" class="logo">
+            </a>
+            <h2 class="title">Asesorías académicas</h2>
+            <a href="index.html">Inicio</a>
+            <a href="acercade.html">Acerca de</a>
+            <a href="asesorias.html">Asesorías</a>
+            <a href="tutores.html">Tutores</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
 
-    <div class="navbar" id="navbar">
-        <img src="imgs/logo.svg" alt="Logo" class="logo">
-        <h2>Asesorías académicas</h2>
-        <a href="contacto.html">Contacto</a>
-        <a href="tutores.html">Tutores</a>
-        <a href="asesorias.html">Asesorias</a>
-        <a href="acercade.html">Acerca de</a>
-        <a href="index.html">Inicio</a>
-    </div>
+    <main>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div><img src="imgs/carousel1.png" alt="1"></div>
+                <div><img src="imgs/carousel2.png" alt="2"></div>
+                <div><img src="imgs/carousel3.png" alt="3"></div>
+                <div><img src="imgs/carousel4.png" alt="4"></div>
+                <div><img src="imgs/carousel5.png" alt="5"></div>
+            </div>
+            <div class="overlay"></div>
+        </div>
 
-    <div class="content">
-        <video width="360" height="720" controls>
-            <source src="imgs/video.mp4" type="video/mp4">
-        </video>
+        <div class="content">
+            <div class="video-text-wrapper">
+                <video width="360" height="720" controls autoplay muted loop>
+                    <source src="imgs/video.mp4" type="video/mp4">
+                </video>
 
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores libero, et praesentium quas laudantium nam
-            tempore voluptatum blanditiis provident sit inventore ab, numquam officiis expedita in officia, sunt quam.
-            Possimus!</p>
-        <p>Voluptate praesentium eum alias est nam, reprehenderit a doloremque distinctio excepturi natus saepe
-            laboriosam facere ut fuga quis quasi enim, ipsum mollitia consequatur quo? Ipsum magnam sunt asperiores
-            eaque placeat.</p>
-        <p>Deserunt neque fugiat in pariatur aliquam eum, esse facilis nobis laborum repellat recusandae error ullam
-            dolor debitis rem cum necessitatibus voluptatibus qui nam mollitia aliquid officia dolorem! Consectetur,
-            veritatis necessitatibus?</p>
-        <p>Perferendis cumque totam dignissimos architecto nulla commodi delectus obcaecati molestiae ex blanditiis id
-            porro, ipsa explicabo nam cum! Dolore laboriosam dolorum recusandae provident est tenetur numquam nesciunt
-            delectus nihil quos.</p>
-        <p>Maiores illo magni quia perferendis? Cupiditate, eligendi voluptatibus ducimus deserunt, impedit doloribus
-            soluta similique sequi iste modi nemo dolores. Veritatis exercitationem eligendi reiciendis distinctio
-            recusandae est, sit deleniti reprehenderit fuga?</p>
-        <p>Sed eum facilis impedit ratione, odit debitis est maiores doloremque? Laborum vel tenetur minus tempora.
-            Tempore ab incidunt vero accusantium sit officia a placeat minima. Aperiam voluptatum minus aliquid tempore?
-        </p>
-        <p>Pariatur architecto minima nesciunt eveniet laudantium tempore accusantium enim officiis debitis et quis
-            inventore sint tenetur quisquam, voluptatibus mollitia. Molestiae, voluptatibus quisquam nihil illo pariatur
-            exercitationem minima aliquid itaque voluptas!</p>
-        <p>Iure, laboriosam aperiam. Illo omnis eius, dolorum fugiat totam quasi consequuntur. Error, quae id voluptate
-            architecto deserunt blanditiis sunt rem? Tempora assumenda doloribus ad obcaecati magni sapiente cumque, vel
-            iusto.</p>
-        <p>Eum fuga modi enim neque ipsum dignissimos consectetur quis eligendi quidem tenetur. Error, quos recusandae
-            earum sed maiores nostrum tempora deserunt, natus sit, aut reprehenderit harum officiis quo. Fuga, dicta.
-        </p>
-        <p>Quibusdam, accusamus. Doloribus facere architecto accusamus eum distinctio omnis fugit at officia placeat?
-            Similique minus, quam laboriosam eius dignissimos enim. Quia aperiam, minus atque tempora quas in fugit
-            pariatur vel.</p>
-        <p>Vel nisi at maxime odio voluptatibus non natus aliquam! Ipsa harum omnis expedita aperiam, accusamus fugiat
-            cupiditate odio, veritatis temporibus nam obcaecati in illum, impedit eius sed ex beatae corporis.</p>
-        <p>Ex inventore similique maxime ipsa, libero officiis dolore temporibus dolorum voluptatum distinctio corporis.
-            Similique dicta eaque accusamus incidunt commodi nostrum laboriosam? Atque totam blanditiis officiis vitae
-            aliquid doloribus recusandae dignissimos!</p>
-        <p>Culpa, quibusdam odio. Tempora ipsam eaque fugit, labore aliquam qui dolore quo obcaecati in velit, corporis
-            quasi aperiam dignissimos corrupti adipisci accusamus quia culpa voluptate dicta itaque? Autem, magnam
-            necessitatibus?</p>
-        <p>Voluptas, dolorum officia pariatur minima excepturi nesciunt atque, modi quia corporis vitae qui porro
-            aliquam expedita aliquid itaque? Inventore est nostrum eum nulla accusamus eius, qui eligendi expedita
-            repellat a.</p>
-        <p>Perspiciatis esse deserunt at dignissimos nostrum similique! Asperiores voluptate maiores quod saepe quia
-            corrupti distinctio! Culpa, mollitia sunt accusantium eveniet recusandae, fugiat libero earum animi neque,
-            qui deserunt quo nisi.</p>
-        <p>Possimus, aperiam deserunt, similique earum et, dolores rem non magni quo sed quasi voluptatum libero
-            doloribus? Excepturi ut blanditiis, odio dolorem et ipsum sed nam, numquam perspiciatis explicabo sint. At!
-        </p>
-        <p>Totam, molestias recusandae perspiciatis incidunt id mollitia suscipit ad nisi a. Voluptate in et obcaecati
-            iusto nihil. Alias earum vel, ullam enim ut quam iste officia, dignissimos eum a est?</p>
-        <p>Error sunt consequuntur culpa dolorem, corrupti nobis ipsa alias consequatur, labore, in est ipsum. Ea autem
-            tempore velit, voluptas recusandae, similique vero doloribus blanditiis obcaecati harum facilis ducimus
-            repellendus! Dignissimos.</p>
-        <p>Ea id nulla sunt. Labore esse impedit dolorem distinctio vero perferendis tenetur rem molestias quaerat nisi,
-            soluta hic voluptatibus porro, aliquid harum. Magni architecto quod, tempore fuga repellat voluptatibus
-            fugiat.</p>
-        <p>Deleniti, iste animi. Illum error assumenda maiores, vitae culpa sequi. Voluptatem vel eos ab odio
-            consequatur perspiciatis? Necessitatibus facilis nesciunt nulla repudiandae vel quasi, laudantium quisquam
-            quis voluptatem neque omnis.</p>
-        <p>Provident harum cumque laudantium sapiente aliquid! Cum quae magnam labore asperiores assumenda minima
-            placeat culpa, voluptate ut fugit adipisci deserunt, velit dicta suscipit impedit delectus quibusdam,
-            temporibus dolore! Officiis, maxime?</p>
-        <p>Explicabo temporibus non exercitationem voluptatum quaerat iusto ullam, amet officia ducimus veniam saepe
-            odio laborum sunt soluta sint et mollitia incidunt minus nisi nostrum! Incidunt quia aperiam obcaecati
-            dolores inventore!</p>
-        <p>Nostrum accusantium optio, dicta totam cupiditate numquam dolore non. Laboriosam nihil iste delectus dolor,
-            tenetur eos vel excepturi incidunt laudantium sed nostrum blanditiis nesciunt expedita vitae deserunt in
-            fugiat cumque?</p>
-        <p>Quaerat dolore perspiciatis sunt esse tempora adipisci, molestias odit corporis provident animi laborum
-            laudantium quo velit ex maxime aspernatur enim deserunt molestiae nulla. Reprehenderit cupiditate minus
-            corporis ab tempore iure?</p>
-        <p>Officia quidem consequatur ut iste inventore impedit consectetur a, velit iusto nostrum fuga. Perspiciatis,
-            consequuntur! Rerum, nostrum, repellat sit accusamus ipsam officiis doloribus officia reprehenderit beatae,
-            dolore quia atque qui.</p>
-        <p>Nostrum aperiam id nemo dolores excepturi voluptas temporibus neque magni eligendi tenetur! Vero autem hic
-            delectus, dolorem ipsam esse quasi tenetur minima, ratione sed amet repudiandae voluptatem placeat ea
-            repellat.</p>
-        <p>Eveniet qui alias excepturi tempora numquam voluptate minima. Adipisci ab accusamus architecto necessitatibus
-            enim aspernatur reprehenderit, doloribus exercitationem quod deserunt ducimus fuga voluptates dicta! Est
-            saepe placeat impedit quas facilis.</p>
-        <p>Nobis voluptas praesentium, similique quos doloribus eaque magni architecto cumque nemo quibusdam quae
-            voluptatibus! Ipsum voluptate quam iusto recusandae eligendi repellendus dolor maxime optio voluptatem
-            numquam? Illo aliquam aliquid magnam!</p>
-        <p>Cum perspiciatis laboriosam esse soluta quam eaque pariatur. Earum eaque amet suscipit. Sed dolorem unde
-            perferendis! Cupiditate atque, maiores accusantium voluptate delectus eveniet at? Incidunt repellat
-            reprehenderit illum voluptates dolores!</p>
-        <p>Tempore aut, porro numquam consequuntur natus placeat commodi sequi nisi nemo similique. Asperiores dicta,
-            nihil dolor sunt dolorem ipsa deserunt quis ipsum amet doloribus porro nemo, corporis, corrupti illum
-            veniam!</p>
-        <p>Doloremque corporis mollitia totam recusandae. Quia laboriosam commodi hic dolorem ipsam, ab ullam quisquam
-            voluptatum laudantium autem tenetur eius facere quis itaque consequatur nam, laborum sequi porro voluptatem
-            odio magnam!</p>
-        <p>Possimus, molestias blanditiis nulla eligendi voluptatibus laborum consequatur ipsum alias. Repellat laborum
-            velit aspernatur dignissimos est architecto deleniti ratione, error distinctio, voluptate incidunt
-            doloremque repellendus cupiditate, eius sint culpa consequuntur.</p>
-    </div>
+                <div class="text-beside-video">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p>Voluptate praesentium eum alias est nam...</p>
+                    <p>Deserunt neque fugiat in pariatur aliquam...</p>
+                </div>
+            </div>
+
+            <!-- Rest of the text content -->
+            <p>Perferendis cumque totam dignissimos architecto nulla...</p>
+            <p>Maiores illo magni quia perferendis? Cupiditate...</p>
+            <p>Sed eum facilis impedit ratione, odit debitis...</p>
+            <!-- More paragraphs as needed -->
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <img src="imgs/vivelafime.png" alt="Vive la FIME" class="footer-image">
+            <p>&copy; 2024 FIME. Todos los derechos reservados.</p>
+            <img src="imgs/vivelafime.png" alt="Vive la FIME" class="footer-image">
+        </div>
+    </footer>
+
 </body>
 
 </html>
