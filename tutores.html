@@ -4,59 +4,292 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Asesorías académicas en FIME.">
+    <meta name="keywords" content="FIME, asesorías, académicas, tutores, contacto">
     <title>FIME</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/tutores.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Montserrat:wght@100;400;900&family=Roboto:wght@100;400;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" defer></script>
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
+    <header>
+        <nav class="navbar" id="navbar">
+            <a href="index.html" class="logo">
+                <img src="imgs/logo.svg" alt="FIME Logo" class="logo">
+            </a>
+            <h2 class="title">Asesorías académicas</h2>
+            <a href="index.html">Inicio</a>
+            <a href="acercade.html">Acerca de</a>
+            <a href="asesorias.html">Asesorías</a>
+            <a href="tutores.html">Tutores</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
 
-    <div class="navbar" id="navbar">
-        <a href="index.html">Inicio</a>
-        <a href="acercade.html">Acerca de</a>
-        <a href="asesorias.html">Asesorias</a>
-        <a href="tutores.html">Tutores</a>
-        <a href="contacto.html">Contacto</a>
-    </div>
-
-    <div class="content">
-        <h3>Armando</h3>
-        <p>Física I, Química general</p>
-        <hr>
-        <h3>Cadmiel</h3>
-        <p>Matemáticas I</p>
-        <hr>
-        <h3>Diego</h3>
-        <p>Matemáticas I</p>
-        <hr>
-        <h3>Fátima</h3>
-        <p>Física I</p>
-        <hr>
-        <h3>Fernando</h3>
-        <p>Química general</p>
-        <hr>
-        <h3>Héctor</h3>
-        <p>Química general, Matemáticas I</p>
-        <hr>
-        <h3>Ian</h3>
-        <p>Matemáticas I, Álgebra para ingeniería</p>
-        <hr>
-        <h3>Luis</h3>
-        <p>Física I</p>
-        <hr>
-        <h3>Montserrat</h3>
-        <p>Matemáticas I</p>
-        <hr>
-        <h3>Raúl</h3>
-        <p>Física I</p>
-        <hr>
-        <h3>Sebastián</h3>
-        <p>Álgebra para ingeniería</p>
-        <hr>
-        <h3>Sofía</h3>
-        <p>Química general, Álgebra para ingeniería</p>
-        <hr>
-    </div>
+    <main>
+        <div class="content">
+            <div class="profile">
+                <img src="imgs/profile1.svg" alt="Perfil Armando" width="100px" height="100px">
+                <h2>Armando</h2>
+                <ul>
+                    <li>Física I</li>
+                    <li>Química general</li>
+                </ul>
+                <div class="rate" id="rate1">
+                    <input type="radio" id="star5_1" name="rate1" value="5" />
+                    <label for="star5_1" title="text">5 stars</label>
+                    <input type="radio" id="star4_1" name="rate1" value="4" />
+                    <label for="star4_1" title="text">4 stars</label>
+                    <input type="radio" id="star3_1" name="rate1" value="3" />
+                    <label for="star3_1" title="text">3 stars</label>
+                    <input type="radio" id="star2_1" name="rate1" value="2" />
+                    <label for="star2_1" title="text">2 stars</label>
+                    <input type="radio" id="star1_1" name="rate1" value="1" />
+                    <label for="star1_1" title="text">1 star</label>
+                </div>
+            </div>
+            <hr>
+            <div class="profile">
+                <img src="imgs/profile2.svg" alt="Perfil Armando" width="100px" height="100px">
+                <h2>Cadmiel</h2>
+                <ul>
+                    <li>Matemáticas I</li>
+                </ul>
+                <div class="rate" id="rate2">
+                    <input type="radio" id="star5_2" name="rate2" value="5" />
+                    <label for="star5_2" title="text">5 stars</label>
+                    <input type="radio" id="star4_2" name="rate2" value="4" />
+                    <label for="star4_2" title="text">4 stars</label>
+                    <input type="radio" id="star3_2" name="rate2" value="3" />
+                    <label for="star3_2" title="text">3 stars</label>
+                    <input type="radio" id="star2_2" name="rate2" value="2" />
+                    <label for="star2_2" title="text">2 stars</label>
+                    <input type="radio" id="star1_2" name="rate2" value="1" />
+                    <label for="star1_2" title="text">1 star</label>
+                </div>
+            </div>
+            <hr>
+            <div class="profile">
+                <img src="imgs/profile3.svg" alt="Perfil Armando" width="100px" height="100px">
+                <h2>Diego</h2>
+                <ul>
+                    <li>Matemáticas I</li>
+                </ul>
+                <div class="rate" id="rate3">
+                    <input type="radio" id="star5_3" name="rate3" value="5" />
+                    <label for="star5_3" title="text">5 stars</label>
+                    <input type="radio" id="star4_3" name="rate3" value="4" />
+                    <label for="star4_3" title="text">4 stars</label>
+                    <input type="radio" id="star3_3" name="rate3" value="3" />
+                    <label for="star3_3" title="text">3 stars</label>
+                    <input type="radio" id="star2_3" name="rate3" value="2" />
+                    <label for="star2_3" title="text">2 stars</label>
+                    <input type="radio" id="star1_3" name="rate3" value="1" />
+                    <label for="star1_3" title="text">1 star</label>
+                </div>
+            </div>
+            <hr>
+            <div class="profile">
+                <img src="imgs/profile4.svg" alt="Perfil Armando" width="100px" height="100px">
+                <h2>Fátima</h2>
+                <ul>
+                    <li>Física I</li>
+                </ul>
+                <div class="rate" id="rate4">
+                    <input type="radio" id="star5_4" name="rate4" value="5" />
+                    <label for="star5_4" title="text">5 stars</label>
+                    <input type="radio" id="star4_4" name="rate4" value="4" />
+                    <label for="star4_4" title="text">4 stars</label>
+                    <input type="radio" id="star3_4" name="rate4" value="3" />
+                    <label for="star3_4" title="text">3 stars</label>
+                    <input type="radio" id="star2_4" name="rate4" value="2" />
+                    <label for="star2_4" title="text">2 stars</label>
+                    <input type="radio" id="star1_4" name="rate4" value="1" />
+                    <label for="star1_4" title="text">1 star</label>
+                </div>
+            </div>
+            <hr>
+            <div class="profile">
+                <img src="imgs/profile5.svg" alt="Perfil Armando" width="100px" height="100px">
+                <h2>Fernando</h2>
+                <ul>
+                    <li>Química general</li>
+                </ul>
+                <div class="rate" id="rate5">
+                    <input type="radio" id="star5_5" name="rate5" value="5" />
+                    <label for="star5_5" title="text">5 stars</label>
+                    <input type="radio" id="star4_5" name="rate5" value="4" />
+                    <label for="star4_5" title="text">4 stars</label>
+                    <input type="radio" id="star3_5" name="rate5" value="3" />
+                    <label for="star3_5" title="text">3 stars</label>
+                    <input type="radio" id="star2_5" name="rate5" value="2" />
+                    <label for="star2_5" title="text">2 stars</label>
+                    <input type="radio" id="star1_5" name="rate5" value="1" />
+                    <label for="star1_5" title="text">1 star</label>
+                </div>
+            </div>
+            <hr>
+            <div class="profile">
+                <img src="imgs/profile6.svg" alt="Perfil Armando" width="100px" height="100px">
+                <h2>Héctor</h2>
+                <ul>
+                    <li>Química general</li>
+                    <li>Matemáticas I</li>
+                </ul>
+                <div class="rate" id="rate6">
+                    <input type="radio" id="star5_6" name="rate6" value="5" />
+                    <label for="star5_6" title="text">5 stars</label>
+                    <input type="radio" id="star4_6" name="rate6" value="4" />
+                    <label for="star4_6" title="text">4 stars</label>
+                    <input type="radio" id="star3_6" name="rate6" value="3" />
+                    <label for="star3_6" title="text">3 stars</label>
+                    <input type="radio" id="star2_6" name="rate6" value="2" />
+                    <label for="star2_6" title="text">2 stars</label>
+                    <input type="radio" id="star1_6" name="rate6" value="1" />
+                    <label for="star1_6" title="text">1 star</label>
+                </div>
+            </div>
+            <hr>
+            <div class="profile">
+                <img src="imgs/profile7.svg" alt="Perfil Armando" width="100px" height="100px">
+                <h2>Ian</h2>
+                <ul>
+                    <li>Matemáticas I</li>
+                    <li>Álgebra para ingeniería</li>
+                </ul>
+                <div class="rate" id="rate7">
+                    <input type="radio" id="star5_7" name="rate7" value="5" />
+                    <label for="star5_7" title="text">5 stars</label>
+                    <input type="radio" id="star4_7" name="rate7" value="4" />
+                    <label for="star4_7" title="text">4 stars</label>
+                    <input type="radio" id="star3_7" name="rate7" value="3" />
+                    <label for="star3_7" title="text">3 stars</label>
+                    <input type="radio" id="star2_7" name="rate7" value="2" />
+                    <label for="star2_7" title="text">2 stars</label>
+                    <input type="radio" id="star1_7" name="rate7" value="1" />
+                    <label for="star1_7" title="text">1 star</label>
+                </div>
+            </div>
+            <hr>
+            <div class="profile">
+                <img src="imgs/profile8.svg" alt="Perfil Armando" width="100px" height="100px">
+                <h2>Luis</h2>
+                <ul>
+                    <li>Física I</li>
+                </ul>
+                <div class="rate" id="rate8">
+                    <input type="radio" id="star5_8" name="rate8" value="5" />
+                    <label for="star5_8" title="text">5 stars</label>
+                    <input type="radio" id="star4_8" name="rate8" value="4" />
+                    <label for="star4_8" title="text">4 stars</label>
+                    <input type="radio" id="star3_8" name="rate8" value="3" />
+                    <label for="star3_8" title="text">3 stars</label>
+                    <input type="radio" id="star2_8" name="rate8" value="2" />
+                    <label for="star2_8" title="text">2 stars</label>
+                    <input type="radio" id="star1_8" name="rate8" value="1" />
+                    <label for="star1_8" title="text">1 star</label>
+                </div>
+            </div>
+            <hr>
+            <div class="profile">
+                <img src="imgs/profile9.svg" alt="Perfil Armando" width="100px" height="100px">
+                <h2>Montserrat</h2>
+                <ul>
+                    <li>Matemáticas I</li>
+                </ul>
+                <div class="rate" id="rate9">
+                    <input type="radio" id="star5_9" name="rate9" value="5" />
+                    <label for="star5_9" title="text">5 stars</label>
+                    <input type="radio" id="star4_9" name="rate9" value="4" />
+                    <label for="star4_9" title="text">4 stars</label>
+                    <input type="radio" id="star3_9" name="rate9" value="3" />
+                    <label for="star3_9" title="text">3 stars</label>
+                    <input type="radio" id="star2_9" name="rate9" value="2" />
+                    <label for="star2_9" title="text">2 stars</label>
+                    <input type="radio" id="star1_9" name="rate9" value="1" />
+                    <label for="star1_9" title="text">1 star</label>
+                </div>
+            </div>
+            <hr>
+            <div class="profile">
+                <img src="imgs/profile10.svg" alt="Perfil Armando" width="100px" height="100px">
+                <h2>Raúl</h2>
+                <ul>
+                    <li>Física I</li>
+                </ul>
+                <div class="rate" id="rate10">
+                    <input type="radio" id="star5_10" name="rate10" value="5" />
+                    <label for="star5_10" title="text">5 stars</label>
+                    <input type="radio" id="star4_10" name="rate10" value="4" />
+                    <label for="star4_10" title="text">4 stars</label>
+                    <input type="radio" id="star3_10" name="rate10" value="3" />
+                    <label for="star3_10" title="text">3 stars</label>
+                    <input type="radio" id="star2_10" name="rate10" value="2" />
+                    <label for="star2_10" title="text">2 stars</label>
+                    <input type="radio" id="star1_10" name="rate10" value="1" />
+                    <label for="star1_10" title="text">1 star</label>
+                </div>
+            </div>
+            <hr>
+            <div class="profile">
+                <img src="imgs/profile11.svg" alt="Perfil Armando" width="100px" height="100px">
+                <h2>Sebastián</h2>
+                <ul>
+                    <li>Álgebra para ingeniería</li>
+                </ul>
+                <div class="rate" id="rate11">
+                    <input type="radio" id="star5_11" name="rate11" value="5" />
+                    <label for="star5_11" title="text">5 stars</label>
+                    <input type="radio" id="star4_11" name="rate11" value="4" />
+                    <label for="star4_11" title="text">4 stars</label>
+                    <input type="radio" id="star3_11" name="rate11" value="3" />
+                    <label for="star3_11" title="text">3 stars</label>
+                    <input type="radio" id="star2_11" name="rate11" value="2" />
+                    <label for="star2_11" title="text">2 stars</label>
+                    <input type="radio" id="star1_11" name="rate11" value="1" />
+                    <label for="star1_11" title="text">1 star</label>
+                </div>
+            </div>
+            <hr>
+            <div class="profile">
+                <img src="imgs/profile12.svg" alt="Perfil Armando" width="100px" height="100px">
+                <h2>Sofía</h2>
+                <ul>
+                    <li>Química general</li>
+                    <li>Álgebra para ingeniería</li>
+                </ul>
+                <div class="rate" id="rate12">
+                    <input type="radio" id="star5_12" name="rate12" value="5" />
+                    <label for="star5_12" title="text">5 stars</label>
+                    <input type="radio" id="star4_12" name="rate12" value="4" />
+                    <label for="star4_12" title="text">4 stars</label>
+                    <input type="radio" id="star3_12" name="rate12" value="3" />
+                    <label for="star3_12" title="text">3 stars</label>
+                    <input type="radio" id="star2_12" name="rate12" value="2" />
+                    <label for="star2_12" title="text">2 stars</label>
+                    <input type="radio" id="star1_12" name="rate12" value="1" />
+                    <label for="star1_12" title="text">1 star</label>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <img src="imgs/osogeometrico.svg" alt="Logo oso geometrico" height="50px">
+            <p>&copy; 2024 FIME. Todos los derechos reservados.</p>
+            <img src="imgs/vivelafime.png" alt="Logo Vive la FIME" class="footer-image">
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -1,0 +1,9 @@
+.imagenacerca {
+    display: flex;
+    justify-content: center;
+}
+
+.negrilla {
+    text-align: center;
+    font-weight: bold;
+}

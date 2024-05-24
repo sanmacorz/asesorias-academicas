@@ -4,24 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Asesorías académicas en FIME.">
+    <meta name="keywords" content="FIME, asesorías, académicas, tutores, contacto">
     <title>FIME</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Montserrat:wght@100;400;900&family=Roboto:wght@100;400;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" defer></script>
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
+    <header>
+        <nav class="navbar" id="navbar">
+            <a href="index.html" class="logo">
+                <img src="imgs/logo.svg" alt="FIME Logo" class="logo">
+            </a>
+            <h2 class="title">Asesorías académicas</h2>
+            <a href="index.html">Inicio</a>
+            <a href="acercade.html">Acerca de</a>
+            <a href="asesorias.html">Asesorías</a>
+            <a href="tutores.html">Tutores</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
 
-    <div class="navbar" id="navbar">
-        <a href="index.html">Inicio</a>
-        <a href="acercade.html">Acerca de</a>
-        <a href="asesorias.html">Asesorias</a>
-        <a href="tutores.html">Tutores</a>
-        <a href="contacto.html">Contacto</a>
-    </div>
+    <main>
+        <div class="content">
+            <p>Llena el siguiente formulario si deseas agendar una sesión particular con uno de nuestros tutores:</p>
+            <br>
+            <div class="container">
+                <form action="" method="post" onsubmit="mensaje_formulario(this)">
 
-    <div class="content">
-        <p>Para contactarnos</p>
-    </div>
+                    <label for=" nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre...">
+
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido...">
+
+                    <label for="tutor">Tutor</label>
+                    <select id="tutor" name="tutor">
+                        <option value="armando">Armando</option>
+                        <option value="cadmiel">Cadmiel</option>
+                        <option value="diego">Diego</option>
+                        <option value="fatima">Fátima</option>
+                        <option value="fernando">Fernando</option>
+                        <option value="hector">Héctor</option>
+                        <option value="ian">Ian</option>
+                        <option value="luis">Luis</option>
+                        <option value="montserrat">Montserrat</option>
+                        <option value="raul">Raúl</option>
+                        <option value="sebastian">Sebastián</option>
+                        <option value="sofia">Sofía</option>
+                    </select>
+
+                    <label for="correo">Correo</label>
+                    <input type="text" id="correo" name="correo" placeholder="Ingrese su correo electrónico...">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" name="fecha" value="2024-05-24" min="2024-05-24" max="2024-06-24" />
+                    <label for="hora">Hora</label>
+                    <input type="time" id="hora" name="hora" min="09:30" max="18:30" required />
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="subject" name="subject" placeholder="Escribe tu duda..."
+                        style="height:200px"></textarea>
+
+                    <input type="submit" value="Enviar">
+
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <img src="imgs/osogeometrico.svg" alt="Logo oso geometrico" height="50px">
+            <p>&copy; 2024 FIME. Todos los derechos reservados.</p>
+            <img src="imgs/vivelafime.png" alt="Logo Vive la FIME" class="footer-image">
+        </div>
+    </footer>
 </body>
 
 </html>

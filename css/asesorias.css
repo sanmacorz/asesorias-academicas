@@ -1,0 +1,111 @@
+.btn {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.btn i {
+    margin-right: 5px;
+}
+
+.dropdown {
+    appearance: none;
+    background-color: var(--unused-color);
+    color: #000;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown option {
+    color: black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+tr:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.header {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    font-weight: bold;
+}
+
+td {
+    background-color: var(--text-color-light);
+    color: var(--text-color-dark);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+tfoot {
+    background-color: var(--secondary-color);
+    color: var(--text-color-light);
+    font-weight: bold;
+}
+
+#myInput {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 20px;
+    margin: 20px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+#myInput::placeholder {
+    color: #888;
+    opacity: 1;
+}
+
+#myInput:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+@media (max-width: 600px) {
+    #myInput {
+        width: 90%;
+        padding: 10px 15px;
+    }
+}

@@ -4,24 +4,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Asesorías académicas en FIME.">
+    <meta name="keywords" content="FIME, asesorías, académicas, tutores, contacto">
     <title>FIME</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/asesorias.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Montserrat:wght@100;400;900&family=Roboto:wght@100;400;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" defer></script>
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
+    <header>
+        <nav class="navbar" id="navbar">
+            <a href="index.html" class="logo">
+                <img src="imgs/logo.svg" alt="FIME Logo" class="logo">
+            </a>
+            <h2 class="title">Asesorías académicas</h2>
+            <a href="index.html">Inicio</a>
+            <a href="acercade.html">Acerca de</a>
+            <a href="asesorias.html">Asesorías</a>
+            <a href="tutores.html">Tutores</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
 
-    <div class="navbar" id="navbar">
-        <a href="index.html">Inicio</a>
-        <a href="acercade.html">Acerca de</a>
-        <a href="asesorias.html">Asesorias</a>
-        <a href="tutores.html">Tutores</a>
-        <a href="contacto.html">Contacto</a>
-    </div>
+    <main>
+        <div class="content">
+            <p>Actualmente solo estamos ofreciendo asesorías académicas para estudiantes de primer semestre, por lo que
+                solo se cubren las 4 materias principales del tronco común de dicho semestre: </p>
+            <input type="text" id="myInput" onkeyup="buscarTabla()" placeholder="Buscar por materias...">
 
-    <div class="content">
-        <p>Aquí van todas las asesorias</p>
-    </div>
+            <table id="myTable">
+                <tr class="header">
+                    <th style="width:60%;">Materia</th>
+                    <th style="width:40%;">Tutores</th>
+                </tr>
+                <tr>
+                    <td>Física I</td>
+                    <td>Armando, Raúl, Fátima, Luis</td>
+                </tr>
+                <tr>
+                    <td>Química general</td>
+                    <td>Armando, Fernando, Sofía, Héctor</td>
+                </tr>
+                <tr>
+                    <td>Matemáticas I</td>
+                    <td>Diego, Ian, Cadmiel, Montserrat, Héctor</td>
+                </tr>
+                <tr>
+                    <td>Álgebra para ingeniería</td>
+                    <td>Ian, Sebastián, Sofía</td>
+                </tr>
+            </table>
+            <br>
+            <div>
+                <select id="nameDropdown" class="dropdown" onchange="filtrarLista()">
+                    <option value="Todos">Todos</option>
+                    <option value="Armando">Armando</option>
+                    <option value="Cadmiel">Cadmiel</option>
+                    <option value="Diego">Diego</option>
+                    <option value="Fátima">Fátima</option>
+                    <option value="Fernando">Fernando</option>
+                    <option value="Héctor">Héctor</option>
+                    <option value="Ian">Ian</option>
+                    <option value="Luis">Luis</option>
+                    <option value="Montserrat">Montserrat</option>
+                    <option value="Raúl">Raúl</option>
+                    <option value="Sebastián">Sebastián</option>
+                    <option value="Sofía">Sofía</option>
+                </select>
+            </div>
+            <br>
+            <br>
+            <ul id="nameList">
+                <li data-name="Armando">Armando - Física I</li>
+                <li data-name="Armando">Armando - Química general</li>
+                <li data-name="Cadmiel">Cadmiel - Matemáticas I</li>
+                <li data-name="Diego">Diego - Matemáticas I</li>
+                <li data-name="Fátima">Fátima - Física I</li>
+                <li data-name="Fernando">Fernando - Química general</li>
+                <li data-name="Héctor">Héctor - Química general</li>
+                <li data-name="Héctor">Héctor - Matemáticas I</li>
+                <li data-name="Ian">Ian - Matemáticas I</li>
+                <li data-name="Ian">Ian - Álgebra para ingeniería</li>
+                <li data-name="Luis">Luis - Física I</li>
+                <li data-name="Montserrat">Montserrat - Matemáticas I</li>
+                <li data-name="Raúl">Raúl - Física I</li>
+                <li data-name="Sebastián">Sebastián - Álgebra para ingeniería</li>
+                <li data-name="Sofía">Sofía - Química general</li>
+                <li data-name="Sofía">Sofía - Álgebra para ingeniería</li>
+            </ul>
+            <br>
+            <table style="table-layout: fixed; width: 508px">
+                <colgroup>
+                    <col style="width: 100px">
+                    <col style="width: 130px">
+                    <col style="width: 130px">
+                    <col style="width: 130px">
+                    <col style="width: 130px">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>-</th>
+                        <th>Martes</th>
+                        <th>Miercoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09:30 AM</td>
+                        <td rowspan="2"></td>
+                        <td rowspan="4"></td>
+                        <td rowspan="3">Matemáticas I<br>9301</td>
+                        <td rowspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td>10:30 AM</td>
+                    </tr>
+                    <tr>
+                        <td>11:30 AM</td>
+                        <td rowspan="3">Química<br>2205</td>
+                        <td rowspan="3">Química<br>9301</td>
+                    </tr>
+                    <tr>
+                        <td>12:30 PM</td>
+                        <td rowspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td>01:30 PM</td>
+                        <td rowspan="3">Álgebra para ingeniería<br>9301</td>
+                    </tr>
+                    <tr>
+                        <td>02:30 PM</td>
+                        <td rowspan="3">Física I<br>2303</td>
+                        <td rowspan="2">Física I<br>3101</td>
+                        <td rowspan="2">Álgebra para ingeniería<br>9301</td>
+                    </tr>
+                    <tr>
+                        <td>03:30 PM</td>
+                    </tr>
+                    <tr>
+                        <td>04:30 PM</td>
+                        <td rowspan="3">Física I<br>1303</td>
+                        <td rowspan="3">Matemáticas I<br>9301</td>
+                        <td rowspan="3">Física I<br>1303</td>
+                    </tr>
+                    <tr>
+                        <td>05:30 PM</td>
+                        <td rowspan="2">Química<br>9301</td>
+                    </tr>
+                    <tr>
+                        <td>06:30 PM</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <p>Si deseas descargar un poster publicitario con la información de este sitio web, utiliza el siguiente
+                botón: </p>
+            <button class="btn"><i class="fa fa-download"></i><a href="/imgs/horario.png"
+                    download="horario.png">Descargar</a></button>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <img src="imgs/osogeometrico.svg" alt="Logo oso geometrico" height="50px">
+            <p>&copy; 2024 FIME. Todos los derechos reservados.</p>
+            <img src="imgs/vivelafime.png" alt="Logo Vive la FIME" class="footer-image">
+        </div>
+    </footer>
 </body>
 
 </html>
